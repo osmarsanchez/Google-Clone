@@ -56,7 +56,7 @@ main .main-logo {
   margin-bottom: 35px;
 }
 main .main-logo img {
-  width: 300px;
+  width: 50%;
 }
 
 main .main-input {
@@ -66,7 +66,7 @@ main .main-input {
 }
 
 main .main-input-container {
-  width: 525px;
+  width: 100%;
   border-radius: 100px;
   border: 1px solid #dfe1e5;
   display: flex;
@@ -92,7 +92,7 @@ main .main-input .search-icon {
   background-size: contain;
   width: 18px;
   height: 18px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 main .main-input .micro-icon {
@@ -159,4 +159,44 @@ footer .footer-right {
 footer ul li a {
   margin: 10px;
   color: #70757a;
+}
+
+@media (max-width: 420px) {
+  main {
+    width: 100%;
+  }
+  main .main-logo {
+    width: 100%;
+  }
+  main .main-input {
+    width: 100%;
+  }
+  main .main-logo img {
+    width: 45%;
+  }
+  main .main-input-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  main .main-buttons {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .main-input-container input {
+    width: 75%;
+    height: 40px;
+  }
+  footer {
+    min-height: 10vh;
+    grid-template-columns: 50% 50%;
+  }
+  footer ul {
+    display: block;
+  }
+  footer .footer-right,
+  footer .footer-left {
+    justify-self: center;
+  }
 }
